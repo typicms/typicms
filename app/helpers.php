@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
+use Illuminate\View\FileViewFinder;
 use TypiCMS\Modules\Core\Models\File as FileModel;
 use TypiCMS\Modules\Core\Models\Page;
 
@@ -20,6 +20,15 @@ if (! function_exists('homeUrl')) {
         }
 
         return url($uri);
+    }
+}
+
+if (! function_exists('showAdminButtons')) {
+    function showAdminButtons(): bool
+    {
+        return (bool) auth('web')->user()?->can('see navbar')
+            && ! request()->boolean('preview')
+            && ! request()->is('*/create-passkey');
     }
 }
 
@@ -83,7 +92,7 @@ if (! function_exists('localeAndRegion')) {
 if (! function_exists('mainLocale')) {
     function mainLocale(): string
     {
-        return Arr::first(locales());
+        return Arr::first(locales()) ?? '';
     }
 }
 
@@ -197,7 +206,7 @@ if (! function_exists('getPageLinkedToModule')) {
 }
 
 if (! function_exists('feeds')) {
-    /** @return Collection<int, Model> */
+    /** @return Collection<(int|string), array{url: string, title: string}> */
     function feeds(): Collection
     {
         $locale = config('app.locale');
@@ -222,7 +231,9 @@ if (! function_exists('pageTemplates')) {
     /** @return array<string, string> */
     function pageTemplates(): array
     {
-        $hints = View::getFinder()->getHints()['pages'] ?? [];
+        /** @var FileViewFinder $finder */
+        $finder = View::getFinder();
+        $hints = $finder->getHints()['pages'] ?? [];
         $path = collect($hints)->map(fn (string $hint): string => "{$hint}/public")->first(
             fn (string $dir): bool => File::isDirectory($dir),
         );
@@ -233,7 +244,7 @@ if (! function_exists('pageTemplates')) {
 
         $templates = [];
         foreach (File::files($path) as $file) {
-            $filename = File::name($file);
+            $filename = File::name($file->getPathname());
             if ($filename === 'default.blade') {
                 continue;
             }
@@ -253,7 +264,9 @@ if (! function_exists('pageSectionTemplates')) {
     /** @return array<string, string> */
     function pageSectionTemplates(): array
     {
-        $hints = View::getFinder()->getHints()['pages'] ?? [];
+        /** @var FileViewFinder $finder */
+        $finder = View::getFinder();
+        $hints = $finder->getHints()['pages'] ?? [];
         $path = collect($hints)->map(fn (string $hint): string => "{$hint}/public")->first(
             fn (string $dir): bool => File::isDirectory($dir),
         );
@@ -264,7 +277,7 @@ if (! function_exists('pageSectionTemplates')) {
 
         $templates = [];
         foreach (File::files($path) as $file) {
-            $filename = File::name($file);
+            $filename = File::name($file->getPathname());
             if ($filename === '_section-default.blade') {
                 continue;
             }
