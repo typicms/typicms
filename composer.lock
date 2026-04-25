@@ -8784,12 +8784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "360339d6f7ab09c8c84b33a32cdc02329985e5b1"
+                "reference": "6c727a0917b67cce7351939c1edb40effc92d27f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/360339d6f7ab09c8c84b33a32cdc02329985e5b1",
-                "reference": "360339d6f7ab09c8c84b33a32cdc02329985e5b1",
+                "url": "https://api.github.com/repos/typicms/core/zipball/6c727a0917b67cce7351939c1edb40effc92d27f",
+                "reference": "6c727a0917b67cce7351939c1edb40effc92d27f",
                 "shasum": ""
             },
             "require": {
@@ -8831,7 +8831,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-22T08:39:03+00:00"
+            "time": "2026-04-25T14:12:01+00:00"
         },
         {
             "name": "typicms/form",
@@ -9053,12 +9053,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/sidebar.git",
-                "reference": "06558f09e84135331d6dd12dd3724da5b1c25ed3"
+                "reference": "cad2ba6ce9d994d482bfb67bfe12740fd1c614c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/sidebar/zipball/06558f09e84135331d6dd12dd3724da5b1c25ed3",
-                "reference": "06558f09e84135331d6dd12dd3724da5b1c25ed3",
+                "url": "https://api.github.com/repos/typicms/sidebar/zipball/cad2ba6ce9d994d482bfb67bfe12740fd1c614c6",
+                "reference": "cad2ba6ce9d994d482bfb67bfe12740fd1c614c6",
                 "shasum": ""
             },
             "require": {
@@ -9101,7 +9101,7 @@
                 "issues": "https://github.com/typicms/sidebar/issues",
                 "source": "https://github.com/typicms/sidebar/tree/main"
             },
-            "time": "2026-03-30T18:09:41+00:00"
+            "time": "2026-04-25T10:32:47+00:00"
         },
         {
             "name": "typicms/things",
@@ -9109,12 +9109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/things.git",
-                "reference": "72edea5fe9d3c5ce06cae49d078d3d492f88e4c0"
+                "reference": "081220870bbba6c1b30f5771b36faed557963dc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/things/zipball/72edea5fe9d3c5ce06cae49d078d3d492f88e4c0",
-                "reference": "72edea5fe9d3c5ce06cae49d078d3d492f88e4c0",
+                "url": "https://api.github.com/repos/typicms/things/zipball/081220870bbba6c1b30f5771b36faed557963dc5",
+                "reference": "081220870bbba6c1b30f5771b36faed557963dc5",
                 "shasum": ""
             },
             "require": {
@@ -9148,7 +9148,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-22T06:29:28+00:00"
+            "time": "2026-04-25T10:32:42+00:00"
         },
         {
             "name": "typicms/translatable",
@@ -9758,16 +9758,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v4.2.7",
+            "version": "v4.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fruitcake/laravel-debugbar.git",
-                "reference": "e9863784b8ee42f7a4393bea90a0750f632df779"
+                "reference": "799d70c1101d3f8840dd76ff68ff6a78f9352905"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruitcake/laravel-debugbar/zipball/e9863784b8ee42f7a4393bea90a0750f632df779",
-                "reference": "e9863784b8ee42f7a4393bea90a0750f632df779",
+                "url": "https://api.github.com/repos/fruitcake/laravel-debugbar/zipball/799d70c1101d3f8840dd76ff68ff6a78f9352905",
+                "reference": "799d70c1101d3f8840dd76ff68ff6a78f9352905",
                 "shasum": ""
             },
             "require": {
@@ -9841,7 +9841,7 @@
             ],
             "support": {
                 "issues": "https://github.com/fruitcake/laravel-debugbar/issues",
-                "source": "https://github.com/fruitcake/laravel-debugbar/tree/v4.2.7"
+                "source": "https://github.com/fruitcake/laravel-debugbar/tree/v4.2.8"
             },
             "funding": [
                 {
@@ -9853,7 +9853,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-18T17:01:20+00:00"
+            "time": "2026-04-20T13:31:29+00:00"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -10639,16 +10639,16 @@
         },
         {
             "name": "laravel/boost",
-            "version": "v2.4.4",
+            "version": "v2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/boost.git",
-                "reference": "db101b977897e00c6d2e40e9b610591cb0aa277e"
+                "reference": "60386c7723ff7cb388b62b6c137597244a9cf2f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/boost/zipball/db101b977897e00c6d2e40e9b610591cb0aa277e",
-                "reference": "db101b977897e00c6d2e40e9b610591cb0aa277e",
+                "url": "https://api.github.com/repos/laravel/boost/zipball/60386c7723ff7cb388b62b6c137597244a9cf2f2",
+                "reference": "60386c7723ff7cb388b62b6c137597244a9cf2f2",
                 "shasum": ""
             },
             "require": {
@@ -10657,7 +10657,7 @@
                 "illuminate/contracts": "^11.45.3|^12.41.1|^13.0",
                 "illuminate/routing": "^11.45.3|^12.41.1|^13.0",
                 "illuminate/support": "^11.45.3|^12.41.1|^13.0",
-                "laravel/mcp": "^0.5.1|^0.6.0",
+                "laravel/mcp": "^0.5.1|^0.6.0|^0.7.0",
                 "laravel/prompts": "^0.3.10",
                 "laravel/roster": "^0.5.0",
                 "php": "^8.2"
@@ -10701,20 +10701,20 @@
                 "issues": "https://github.com/laravel/boost/issues",
                 "source": "https://github.com/laravel/boost"
             },
-            "time": "2026-04-16T16:53:05+00:00"
+            "time": "2026-04-22T13:29:20+00:00"
         },
         {
             "name": "laravel/mcp",
-            "version": "v0.6.7",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/mcp.git",
-                "reference": "c3775e57b95d7eadb580d543689d9971ec8721f2"
+                "reference": "3513b4feca5f1678be4d2261dcfa8e456436d02a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/mcp/zipball/c3775e57b95d7eadb580d543689d9971ec8721f2",
-                "reference": "c3775e57b95d7eadb580d543689d9971ec8721f2",
+                "url": "https://api.github.com/repos/laravel/mcp/zipball/3513b4feca5f1678be4d2261dcfa8e456436d02a",
+                "reference": "3513b4feca5f1678be4d2261dcfa8e456436d02a",
                 "shasum": ""
             },
             "require": {
@@ -10774,7 +10774,7 @@
                 "issues": "https://github.com/laravel/mcp/issues",
                 "source": "https://github.com/laravel/mcp"
             },
-            "time": "2026-04-15T08:30:42+00:00"
+            "time": "2026-04-21T10:23:03+00:00"
         },
         {
             "name": "laravel/pail",
