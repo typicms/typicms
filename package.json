@@ -12,7 +12,7 @@
         "format": "prettier --write resources/",
         "format:check": "prettier --check resources/",
         "lint": "eslint . --fix",
-        "icons": "~/Library/Python/3.9/bin/pyftsubset ./node_modules/lucide-static/font/lucide.woff2 --glyphs=home,user,newspaper,image,file-text,map-pin,calendar-range,key-round,grid-2-x-2,square-dashed-text,tag,globe,file-image,shield-user,message-circle-question-mark,circle-user-round,settings,eye,corner-right-down,lock,folder,file,file-music,file-archive,file-video-2,circle-plus,move,x,pencil,file-down,arrow-left,chevron-down,chevron-right,chevron-left,chevron-up,users,menu,arrow-up,plus,minus,building,hash,users,message-square-quote,message-square-more,message-square-text,quote,external-link,log-out,mail,arrow-right,arrow-up,arrow-left,arrow-down,shuffle,handshake,shapes --glyph-names --output-file=./resources/fonts/lucide-subset.woff2"
+        "icons": "~/Library/Python/3.9/bin/pyftsubset ./node_modules/lucide-static/font/lucide.woff2 --glyphs=home,user,newspaper,image,file-text,map-pin,calendar-range,key-round,grid-2-x-2,square-dashed-text,tag,globe,file-image,shield-user,message-circle-question-mark,circle-user-round,settings,eye,corner-right-down,lock,folder,file,file-music,file-archive,file-video-2,circle-plus,grip-vertical,x,pencil,file-down,arrow-left,chevron-down,chevron-right,chevron-left,chevron-up,users,menu,arrow-up,plus,minus,building,hash,users,message-square-quote,message-square-more,message-square-text,quote,external-link,log-out,mail,arrow-right,arrow-up,arrow-left,arrow-down,shuffle,handshake,shapes --glyph-names --output-file=./resources/fonts/lucide-subset.woff2"
     },
     "dependencies": {
         "@codemirror/autocomplete": "^6.20.1",
