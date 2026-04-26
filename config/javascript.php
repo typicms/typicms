@@ -12,7 +12,7 @@ return [
     | Example: 'footer' or ['footer', 'bottom']
     |
     */
-    'bind_js_vars_to_this_view' => 'core::admin._javascript',
+    'bind_js_vars_to_this_view' => 'admin::core._javascript',
 
     /*
     |--------------------------------------------------------------------------
