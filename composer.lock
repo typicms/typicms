@@ -8784,12 +8784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "c3d9f450e52de59d31e9c8ef8788e8674ddd8f98"
+                "reference": "e8cd2313a4adc75693bf6ed18c2d45399e24d46f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/c3d9f450e52de59d31e9c8ef8788e8674ddd8f98",
-                "reference": "c3d9f450e52de59d31e9c8ef8788e8674ddd8f98",
+                "url": "https://api.github.com/repos/typicms/core/zipball/e8cd2313a4adc75693bf6ed18c2d45399e24d46f",
+                "reference": "e8cd2313a4adc75693bf6ed18c2d45399e24d46f",
                 "shasum": ""
             },
             "require": {
@@ -8831,7 +8831,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-26T20:18:13+00:00"
+            "time": "2026-04-27T09:02:20+00:00"
         },
         {
             "name": "typicms/form",
@@ -9109,12 +9109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/things.git",
-                "reference": "500e6db29c107fa90e1a4cf7778884a9d745644f"
+                "reference": "a4f35319cb34c89cde67e0637103b103b44a5ef0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/things/zipball/500e6db29c107fa90e1a4cf7778884a9d745644f",
-                "reference": "500e6db29c107fa90e1a4cf7778884a9d745644f",
+                "url": "https://api.github.com/repos/typicms/things/zipball/a4f35319cb34c89cde67e0637103b103b44a5ef0",
+                "reference": "a4f35319cb34c89cde67e0637103b103b44a5ef0",
                 "shasum": ""
             },
             "require": {
@@ -9148,7 +9148,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-26T17:58:12+00:00"
+            "time": "2026-04-27T09:03:17+00:00"
         },
         {
             "name": "typicms/translatable",
