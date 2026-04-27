@@ -10,9 +10,10 @@ All notable changes to TypiCMS will be documented in this file.
 - PHP 8.4 required
 - Base model replaced by traits
 - Presenter pattern replaced by presenter traits
-- JSON-LD structured data migrated to `<x-json-ld>` Blade component for News, Events, Places, Partners, and Pages
+- JSON-LD structured data migrated to `<x-core::json-ld>` Blade component for News, Events, Places, Partners, and Pages
 - Croppa 8
 - Security fixes
+- View composers removed: use app()->getLocale() in place of $lang and websiteTitle() in place of $websiteTitle
 
 ### Added
 
