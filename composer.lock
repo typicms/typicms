@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f74fb5f279c2c938f06f8ec14b8554f",
+    "content-hash": "ee37de3e7af66b497b4fd2de409ece62",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -8784,12 +8784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "ff7602c55c14979f3cb6b7645e17927ef8dae6b4"
+                "reference": "b97a90d590bee55ab92e76fcf788d4be188b870d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/ff7602c55c14979f3cb6b7645e17927ef8dae6b4",
-                "reference": "ff7602c55c14979f3cb6b7645e17927ef8dae6b4",
+                "url": "https://api.github.com/repos/typicms/core/zipball/b97a90d590bee55ab92e76fcf788d4be188b870d",
+                "reference": "b97a90d590bee55ab92e76fcf788d4be188b870d",
                 "shasum": ""
             },
             "require": {
@@ -8831,7 +8831,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-27T18:06:51+00:00"
+            "time": "2026-04-27T18:37:46+00:00"
         },
         {
             "name": "typicms/form",
@@ -9102,53 +9102,6 @@
                 "source": "https://github.com/typicms/sidebar/tree/main"
             },
             "time": "2026-04-25T10:32:47+00:00"
-        },
-        {
-            "name": "typicms/things",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/typicms/things.git",
-                "reference": "a4f35319cb34c89cde67e0637103b103b44a5ef0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/typicms/things/zipball/a4f35319cb34c89cde67e0637103b103b44a5ef0",
-                "reference": "a4f35319cb34c89cde67e0637103b103b44a5ef0",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "~13.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Things\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "description": "A starter module template for creating new content types in TypiCMS applications.",
-            "support": {
-                "issues": "https://github.com/typicms/things/issues",
-                "source": "https://github.com/typicms/things/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/typicms",
-                    "type": "github"
-                }
-            ],
-            "time": "2026-04-27T09:03:17+00:00"
         },
         {
             "name": "typicms/translatable",
@@ -13723,8 +13676,7 @@
     "stability-flags": {
         "spatie/laravel-passkeys": 20,
         "typicms/core": 20,
-        "typicms/sidebar": 20,
-        "typicms/things": 20
+        "typicms/sidebar": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
