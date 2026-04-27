@@ -50,7 +50,6 @@
         "typicms/laravel-translatable-bootforms": "^10.0.0",
         "typicms/nestablecollection": "^6.0",
         "typicms/sidebar": "dev-main",
-        "typicms/things": "dev-main",
         "typicms/translatable": "^2.0",
         "typidesign/laravel-artisan-translations": "^4.0",
         "ultrono/laravel-sitemap": "^10.0.0"
