@@ -62,6 +62,18 @@ if (! function_exists('locales')) {
     }
 }
 
+if (! function_exists('adminLocales')) {
+    /** @return array<string> */
+    function adminLocales(): array
+    {
+        if (is_array(config('typicms.admin_locales'))) {
+            return array_keys(config('typicms.admin_locales'));
+        }
+
+        return locales();
+    }
+}
+
 if (! function_exists('enabledLocales')) {
     /** @return array<string> */
     function enabledLocales(): array
