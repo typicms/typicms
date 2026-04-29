@@ -22,7 +22,6 @@ use TypiCMS\Modules\Core\Http\Middleware\PublicAccess;
 use TypiCMS\Modules\Core\Http\Middleware\SetContentLocale;
 use TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUrl;
 use TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUser;
-use TypiCMS\Modules\Core\Http\Middleware\SetNavbarLocale;
 use TypiCMS\Modules\Core\Http\Middleware\SetTranslatableFallbackLocaleToNull;
 use TypiCMS\Modules\Core\Http\Middleware\UserPrefs;
 use TypiCMS\Modules\Core\Http\Middleware\VerifyLocalizedUrl;
@@ -55,7 +54,6 @@ return Application::configure(basePath: dirname(__DIR__))
             CacheResponse::class,
             PoweredByHeader::class,
             Impersonate::class,
-            SetNavbarLocale::class,
             SetLocaleFromUrl::class,
             VerifyLocalizedUrl::class,
             PublicAccess::class,
@@ -75,7 +73,6 @@ return Application::configure(basePath: dirname(__DIR__))
             SetContentLocale::class,
 
             Impersonate::class,
-            SetNavbarLocale::class,
 
             JavaScriptData::class,
             UserPrefs::class,
@@ -89,8 +86,8 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $exceptions->render(function (HttpException $e, Request $request) {
             $statusCode = $e->getStatusCode();
-            if ($request->is('admin/*') && view()->exists('errors.admin.'.$statusCode)) {
-                return response()->view('errors.admin.'.$statusCode, [], $statusCode);
+            if ($request->is('admin/*') && view()->exists('admin::errors.'.$statusCode)) {
+                return response()->view('admin::errors.'.$statusCode, [], $statusCode);
             }
         });
 
