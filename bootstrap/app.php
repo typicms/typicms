@@ -92,16 +92,6 @@ return Application::configure(basePath: dirname(__DIR__))
             if ($request->is('admin/*') && view()->exists('errors.admin.'.$statusCode)) {
                 return response()->view('errors.admin.'.$statusCode, [], $statusCode);
             }
-
-            $view = 'errors.'.$statusCode;
-            if (view()->exists($view)) {
-                return response()->view($view, [], $statusCode);
-            }
-
-            $view = mb_substr($view, 0, -2).'xx';
-            if (view()->exists($view)) {
-                return response()->view($view, [], $statusCode);
-            }
         });
 
         if (app()->bound('sentry')) {
