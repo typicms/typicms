@@ -35,7 +35,7 @@
         "spatie/laravel-markdown-response": "^1.2",
         "spatie/laravel-one-time-passwords": "^1.0",
         "spatie/laravel-passkeys": "^1.7.2",
-        "spatie/laravel-permission": "^7.2.3",
+        "spatie/laravel-permission": "^8.0.0",
         "spatie/laravel-query-builder": "^7.0.1",
         "spatie/laravel-responsecache": "^8.3",
         "symfony/http-client": "^v8.0.7",
