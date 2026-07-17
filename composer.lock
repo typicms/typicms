@@ -4,30 +4,30 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4937617eafbe31eeaa0d065d5a1a8616",
+    "content-hash": "d55eaef037ef2722073b57de1f805566",
     "packages": [
         {
             "name": "bkwld/croppa",
-            "version": "8.0.1",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BKWLD/croppa.git",
-                "reference": "2b81932c87545b34c244f2cdf02d9320433022bd"
+                "reference": "4e71e187a7d4dc357081d9a2778f849fd613c430"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/2b81932c87545b34c244f2cdf02d9320433022bd",
-                "reference": "2b81932c87545b34c244f2cdf02d9320433022bd",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/4e71e187a7d4dc357081d9a2778f849fd613c430",
+                "reference": "4e71e187a7d4dc357081d9a2778f849fd613c430",
                 "shasum": ""
             },
             "require": {
                 "ext-gd": "*",
-                "illuminate/console": "^9.0|^10.0|^11.0|^12.0|^13.0",
-                "illuminate/routing": "^9.0|^10.0|^11.0|^12.0|^13.0",
-                "illuminate/support": "^9.0|^10.0|^11.0|^12.0|^13.0",
-                "intervention/image": "^3.6",
+                "illuminate/console": "^10.0|^11.0|^12.0|^13.0",
+                "illuminate/routing": "^10.0|^11.0|^12.0|^13.0",
+                "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+                "intervention/image": "^4.0",
                 "league/flysystem": "^3.0",
-                "php": "^8.1",
+                "php": "^8.3",
                 "symfony/http-foundation": "^6.0|^7.0|^8.0",
                 "symfony/http-kernel": "^6.0|^7.0|^8.0"
             },
@@ -36,7 +36,7 @@
                 "larastan/larastan": "^2.11.2|^3.9",
                 "laravel/pint": "^1.0",
                 "mockery/mockery": "^1.4.4",
-                "orchestra/testbench": "^7.5|^8.0|^9.0|^10.0|^11.0",
+                "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
                 "phpunit/phpunit": "^9.5.10|^11.5.3|^12.5.12"
             },
             "suggest": {
@@ -80,9 +80,9 @@
             ],
             "support": {
                 "issues": "https://github.com/BKWLD/croppa/issues",
-                "source": "https://github.com/BKWLD/croppa/tree/8.0.1"
+                "source": "https://github.com/BKWLD/croppa/tree/9.0.0"
             },
-            "time": "2026-07-15T14:28:00+00:00"
+            "time": "2026-07-15T14:28:58+00:00"
         },
         {
             "name": "brick/math",
@@ -1443,26 +1443,26 @@
         },
         {
             "name": "intervention/gif",
-            "version": "4.2.4",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/gif.git",
-                "reference": "c3598a16ebe7690cd55640c44144a9df383ea73c"
+                "reference": "bb395af960deffe64d70c976b4df9283f68e762d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/gif/zipball/c3598a16ebe7690cd55640c44144a9df383ea73c",
-                "reference": "c3598a16ebe7690cd55640c44144a9df383ea73c",
+                "url": "https://api.github.com/repos/Intervention/gif/zipball/bb395af960deffe64d70c976b4df9283f68e762d",
+                "reference": "bb395af960deffe64d70c976b4df9283f68e762d",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.3"
             },
             "require-dev": {
                 "phpstan/phpstan": "^2.1",
-                "phpunit/phpunit": "^10.0 || ^11.0  || ^12.0",
+                "phpunit/phpunit": "^12.0",
                 "slevomat/coding-standard": "~8.0",
-                "squizlabs/php_codesniffer": "^3.8"
+                "squizlabs/php_codesniffer": "^4"
             },
             "type": "library",
             "autoload": {
@@ -1481,7 +1481,7 @@
                     "homepage": "https://intervention.io/"
                 }
             ],
-            "description": "Native PHP GIF Encoder/Decoder",
+            "description": "PHP GIF Encoder/Decoder",
             "homepage": "https://github.com/intervention/gif",
             "keywords": [
                 "animation",
@@ -1491,7 +1491,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Intervention/gif/issues",
-                "source": "https://github.com/Intervention/gif/tree/4.2.4"
+                "source": "https://github.com/Intervention/gif/tree/5.0.1"
             },
             "funding": [
                 {
@@ -1507,31 +1507,31 @@
                     "type": "ko_fi"
                 }
             ],
-            "time": "2026-01-04T09:27:23+00:00"
+            "time": "2026-05-03T06:04:47+00:00"
         },
         {
             "name": "intervention/image",
-            "version": "3.11.8",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/image.git",
-                "reference": "cf04c8dd245697f701057c13d4bfe140d584e738"
+                "reference": "830907fc5397dfc2a51a4e90322d586989fc8364"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/image/zipball/cf04c8dd245697f701057c13d4bfe140d584e738",
-                "reference": "cf04c8dd245697f701057c13d4bfe140d584e738",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/830907fc5397dfc2a51a4e90322d586989fc8364",
+                "reference": "830907fc5397dfc2a51a4e90322d586989fc8364",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "intervention/gif": "^4.2",
-                "php": "^8.1"
+                "intervention/gif": "^5",
+                "php": "^8.3"
             },
             "require-dev": {
                 "mockery/mockery": "^1.6",
                 "phpstan/phpstan": "^2.1",
-                "phpunit/phpunit": "^10.0 || ^11.0 || ^12.0",
+                "phpunit/phpunit": "^12.0",
                 "slevomat/coding-standard": "~8.0",
                 "squizlabs/php_codesniffer": "^4"
             },
@@ -1567,7 +1567,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Intervention/image/issues",
-                "source": "https://github.com/Intervention/image/tree/3.11.8"
+                "source": "https://github.com/Intervention/image/tree/4.2.0"
             },
             "funding": [
                 {
@@ -1583,7 +1583,7 @@
                     "type": "ko_fi"
                 }
             ],
-            "time": "2026-05-01T08:20:10+00:00"
+            "time": "2026-07-09T13:07:14+00:00"
         },
         {
             "name": "laracasts/utilities",
