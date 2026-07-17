@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": "^8.4",
-        "bkwld/croppa": "^8.0.0",
+        "bkwld/croppa": "^9.0.0",
         "eluceo/ical": "^2.14",
         "enshrined/svg-sanitize": "^0.22.0",
         "laracasts/utilities": "^3.2",
