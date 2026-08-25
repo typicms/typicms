@@ -3,14 +3,11 @@
 declare(strict_types=1);
 
 use Rector\Caching\ValueObject\Storage\FileCacheStorage;
-use Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector;
 use Rector\Config\RectorConfig;
 use Rector\TypeDeclaration\Rector\StmtsAwareInterface\DeclareStrictTypesRector;
 use RectorLaravel\Set\LaravelSetList;
-use RectorLaravel\Set\LaravelSetProvider;
 
 return RectorConfig::configure()
-    ->withSetProviders(LaravelSetProvider::class)
     ->withSets([
         LaravelSetList::LARAVEL_ARRAYACCESS_TO_METHOD_CALL,
         LaravelSetList::LARAVEL_ARRAY_STR_FUNCTION_TO_STATIC_CALL,
@@ -41,10 +38,7 @@ return RectorConfig::configure()
         privatization: true,
         earlyReturn: true,
     )
+    ->withPhpSets()
     ->withRules([
         DeclareStrictTypesRector::class,
-    ])
-    ->withPhpSets()
-    ->withSkip([
-        EncapsedStringsToSprintfRector::class,
     ]);
