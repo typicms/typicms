@@ -40,7 +40,7 @@
         "spatie/laravel-responsecache": "^8.3",
         "symfony/http-client": "^v8.0.7",
         "symfony/mailgun-mailer": "^v8.0.0",
-        "typicms/core": "^17.0",
+        "typicms/core": "dev-catch-all-module-dispatch",
         "typicms/laravel-translatable-bootforms": "^10.1.0",
         "typicms/nestablecollection": "^6.0",
         "typicms/sidebar": "^2.0",

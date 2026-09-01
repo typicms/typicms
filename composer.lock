@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb79fc5577d2801bdfe8457abf2dac16",
+    "content-hash": "441613198ec1bf1ef118a13d35523030",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -8844,16 +8844,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "17.0.40",
+            "version": "dev-catch-all-module-dispatch",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "3f532c16b85d307871528b45f744a35a393f9cdf"
+                "reference": "a302522891007733a4674dba25eec4ab1d0ee6c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/3f532c16b85d307871528b45f744a35a393f9cdf",
-                "reference": "3f532c16b85d307871528b45f744a35a393f9cdf",
+                "url": "https://api.github.com/repos/typicms/core/zipball/a302522891007733a4674dba25eec4ab1d0ee6c5",
+                "reference": "a302522891007733a4674dba25eec4ab1d0ee6c5",
                 "shasum": ""
             },
             "require": {
@@ -8886,7 +8886,7 @@
             "description": "The core package of TypiCMS, containing the base architecture, services, and shared components used across all modules.",
             "support": {
                 "issues": "https://github.com/typicms/core/issues",
-                "source": "https://github.com/typicms/core/tree/17.0.40"
+                "source": "https://github.com/typicms/core/tree/catch-all-module-dispatch"
             },
             "funding": [
                 {
@@ -8894,7 +8894,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-08-24T12:33:00+00:00"
+            "time": "2026-09-01T10:57:17+00:00"
         },
         {
             "name": "typicms/form",
@@ -14106,7 +14106,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "maatwebsite/excel": 20
+        "maatwebsite/excel": 20,
+        "typicms/core": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
