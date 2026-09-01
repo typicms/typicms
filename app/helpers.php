@@ -5,11 +5,11 @@ declare(strict_types=1);
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 use Illuminate\View\FileViewFinder;
 use TypiCMS\Modules\Core\Models\File as FileModel;
 use TypiCMS\Modules\Core\Models\Page;
+use TypiCMS\Modules\Core\Support\ModuleUrl;
 
 if (! function_exists('homeUrl')) {
     function homeUrl(): string
@@ -226,10 +226,10 @@ if (! function_exists('feeds')) {
 
         return collect((array) config('typicms.modules'))
             ->transform(function (array $properties, string $module) use ($locale): ?array {
-                $routeName = $locale.'::'.$module.'-feed';
-                if (isset($properties['has_feed']) && $properties['has_feed'] === true && Route::has($routeName)) {
+                $url = ModuleUrl::item($module, $module.'-feed.xml', $locale);
+                if (isset($properties['has_feed']) && $properties['has_feed'] === true && $url !== null) {
                     return [
-                        'url' => route($routeName, $module),
+                        'url' => $url,
                         'title' => __(ucfirst($module).' feed').' – '.websiteTitle(),
                     ];
                 }
