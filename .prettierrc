@@ -1,19 +1,5 @@
 {
     "singleQuote": true,
     "tabWidth": 4,
-    "singleAttributePerLine": false,
-    "plugins": [
-        "prettier-plugin-blade"
-    ],
-    "overrides": [
-        {
-            "files": [
-                "*.blade.php"
-            ],
-            "options": {
-                "parser": "blade",
-                "bladeDirectiveArgSpacing": "none"
-            }
-        }
-    ]
+    "singleAttributePerLine": false
 }
