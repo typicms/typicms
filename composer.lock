@@ -8963,16 +8963,16 @@
         },
         {
             "name": "typicms/bootforms",
-            "version": "5.2.1",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/bootforms.git",
-                "reference": "a716a921684e01d6a9cc699a409df80a2a37608f"
+                "reference": "4cdecdd73a32d6f5c1f1da58c53a808283edb223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/bootforms/zipball/a716a921684e01d6a9cc699a409df80a2a37608f",
-                "reference": "a716a921684e01d6a9cc699a409df80a2a37608f",
+                "url": "https://api.github.com/repos/typicms/bootforms/zipball/4cdecdd73a32d6f5c1f1da58c53a808283edb223",
+                "reference": "4cdecdd73a32d6f5c1f1da58c53a808283edb223",
                 "shasum": ""
             },
             "require": {
@@ -9018,7 +9018,7 @@
             "description": "Just a Formbuilder with some Bootstrap 5 specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
             "support": {
                 "issues": "https://github.com/typicms/bootforms/issues",
-                "source": "https://github.com/typicms/bootforms/tree/5.2.1"
+                "source": "https://github.com/typicms/bootforms/tree/5.2.2"
             },
             "funding": [
                 {
@@ -9026,20 +9026,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-12T09:38:30+00:00"
+            "time": "2026-06-12T10:33:41+00:00"
         },
         {
             "name": "typicms/core",
-            "version": "17.0.48",
+            "version": "17.0.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "69366228399f2a60606c2d0c15bb1fafd93aa2c1"
+                "reference": "e804a4d2922cc9ef2ff79f42e6c9f9dbf05fd481"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/69366228399f2a60606c2d0c15bb1fafd93aa2c1",
-                "reference": "69366228399f2a60606c2d0c15bb1fafd93aa2c1",
+                "url": "https://api.github.com/repos/typicms/core/zipball/e804a4d2922cc9ef2ff79f42e6c9f9dbf05fd481",
+                "reference": "e804a4d2922cc9ef2ff79f42e6c9f9dbf05fd481",
                 "shasum": ""
             },
             "require": {
@@ -9072,7 +9072,7 @@
             "description": "The core package of TypiCMS, containing the base architecture, services, and shared components used across all modules.",
             "support": {
                 "issues": "https://github.com/typicms/core/issues",
-                "source": "https://github.com/typicms/core/tree/17.0.48"
+                "source": "https://github.com/typicms/core/tree/17.0.49"
             },
             "funding": [
                 {
@@ -9080,7 +9080,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-05T14:24:15+00:00"
+            "time": "2026-11-05T16:09:07+00:00"
         },
         {
             "name": "typicms/form",
@@ -9298,16 +9298,16 @@
         },
         {
             "name": "typicms/sidebar",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/sidebar.git",
-                "reference": "9ff5654d4f0b9bca1652af39c06c506c7424fd03"
+                "reference": "507d00e3362c0acdd534ee7028fb72980ff7b484"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/sidebar/zipball/9ff5654d4f0b9bca1652af39c06c506c7424fd03",
-                "reference": "9ff5654d4f0b9bca1652af39c06c506c7424fd03",
+                "url": "https://api.github.com/repos/typicms/sidebar/zipball/507d00e3362c0acdd534ee7028fb72980ff7b484",
+                "reference": "507d00e3362c0acdd534ee7028fb72980ff7b484",
                 "shasum": ""
             },
             "require": {
@@ -9347,9 +9347,9 @@
             "description": "A sidebar builder for TypiCMS",
             "support": {
                 "issues": "https://github.com/typicms/sidebar/issues",
-                "source": "https://github.com/typicms/sidebar/tree/2.0.0"
+                "source": "https://github.com/typicms/sidebar/tree/2.0.1"
             },
-            "time": "2026-05-01T11:23:36+00:00"
+            "time": "2026-11-05T16:09:38+00:00"
         },
         {
             "name": "typicms/translatable",
