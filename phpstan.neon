@@ -13,4 +13,4 @@ parameters:
         - routes
         - Modules
 
-    level: 8
+    level: 10
