@@ -200,8 +200,13 @@ if (! function_exists('getMigrationFileName')) {
     {
         $directory = database_path(DIRECTORY_SEPARATOR.'migrations'.DIRECTORY_SEPARATOR);
         $migrations = File::glob($directory.'*_'.$name.'.php');
+        $existingMigration = $migrations[0] ?? null;
 
-        return $migrations[0] ?? $directory.date('Y_m_d_His', time() + $count).'_'.$name.'.php';
+        if (is_string($existingMigration)) {
+            return $existingMigration;
+        }
+
+        return $directory.date('Y_m_d_His', time() + $count).'_'.$name.'.php';
     }
 }
 
@@ -213,8 +218,8 @@ if (! function_exists('getPagesLinkedToModule')) {
         $routes = resolve('typicms.routes');
 
         $pages = [];
-        foreach ($routes as $page) {
-            if ($page->module === $module) {
+        foreach (is_iterable($routes) ? $routes : [] as $page) {
+            if ($page instanceof Page && $page->module === $module) {
                 $pages[] = $page;
             }
         }
@@ -264,7 +269,7 @@ if (! function_exists('pageTemplates')) {
         /** @var FileViewFinder $finder */
         $finder = View::getFinder();
         $hints = $finder->getHints()['public'] ?? [];
-        $path = collect($hints)->map(fn (string $hint): string => "{$hint}/pages")->first(
+        $path = collect($hints)->map(fn (mixed $hint): string => (is_string($hint) ? $hint : '').'/pages')->first(
             fn (string $dir): bool => File::isDirectory($dir),
         );
 
@@ -297,7 +302,7 @@ if (! function_exists('pageSectionTemplates')) {
         /** @var FileViewFinder $finder */
         $finder = View::getFinder();
         $hints = $finder->getHints()['public'] ?? [];
-        $path = collect($hints)->map(fn (string $hint): string => "{$hint}/pages")->first(
+        $path = collect($hints)->map(fn (mixed $hint): string => (is_string($hint) ? $hint : '').'/pages')->first(
             fn (string $dir): bool => File::isDirectory($dir),
         );
 
