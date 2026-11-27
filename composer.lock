@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "552d0c78ef898d5476684c0cbf4494c2",
+    "content-hash": "f375a536eb1b9c2451b71664aad91e0b",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -9208,12 +9208,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "ba73c7917c7444d0a37b51537ddd7f4af7b97ae5"
+                "reference": "089207999f1d6e8d684a3b7106c652e9d4a03119"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/ba73c7917c7444d0a37b51537ddd7f4af7b97ae5",
-                "reference": "ba73c7917c7444d0a37b51537ddd7f4af7b97ae5",
+                "url": "https://api.github.com/repos/typicms/core/zipball/089207999f1d6e8d684a3b7106c652e9d4a03119",
+                "reference": "089207999f1d6e8d684a3b7106c652e9d4a03119",
                 "shasum": ""
             },
             "require": {
@@ -9227,6 +9227,9 @@
                         "TypiCMS\\Modules\\Core\\Providers\\ModuleServiceProvider",
                         "TypiCMS\\Modules\\Core\\Providers\\TranslationsServiceProvider"
                     ]
+                },
+                "branch-alias": {
+                    "dev-main": "18.x-dev"
                 }
             },
             "autoload": {
@@ -9255,8 +9258,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-27T13:32:49+00:00",
-            "published-time": "2026-11-27T13:32:56+00:00"
+            "time": "2026-11-27T13:42:39+00:00",
+            "published-time": "2026-11-27T13:42:47+00:00"
         },
         {
             "name": "typicms/form",
@@ -14506,8 +14509,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "maatwebsite/excel": 20,
-        "typicms/core": 20
+        "maatwebsite/excel": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
