@@ -2,6 +2,44 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 18.0.0 - Unreleased
+
+Upgrade guide: the `typicms-v18-upgrade` skill shipped with typicms/core (`resources/boost/skills`) walks through every step below.
+
+### Changed
+
+- Bootstrap 6 (admin and public), `typicms/laravel-translatable-bootforms` 11 (Bootstrap 6 markup); `@popperjs/core` is no longer needed
+- Admin and public Sass variables replaced by Bootstrap CSS variables; published SCSS that uses `$` variables from `admin/_variables.scss` must be updated
+- Buttons use Bootstrap classes in the markup instead of `@extend`, item list status uses a Bootstrap switch
+- View namespaces removed: views are referenced like app views. Replace `admin::` with `admin.`, `public::` with `public.` and `mails::` with `mail.` in views, controllers, notifications, view composers, `config/javascript.php` and `bootstrap/app.php` (`admin.errors.`). Route names such as `admin::index-news` are unchanged
+- Packages register their views with `View::addLocation()`; the project's `resources/views` still comes first, so published views keep overriding the package ones
+- `typicms.template_dir` is now a folder of `resources/views`, used as `{template_dir}.pages.{template}`
+- Modules linked to a page are routed by rewriting the request URI onto a fixed internal prefix (`/en/agenda/a-talk` → `/en/_module/events/a-talk`), so the route table no longer depends on the database. Modules register their front office routes with `ModuleRoutes::group()`
+- Per-locale named front office routes (`en::index-news`, `en::news`, `en::news-feed`, `en::search`, `en::index-tags`…) are gone: build URLs with `ModuleUrl::index()`, `ModuleUrl::item()` and `ModuleUrl::to()`. `feeds()` in `app/helpers.php` uses `ModuleUrl`
+- The page a module is linked to is shared with the module's views by the `ModulePage` middleware, which also applies the page's privacy to the whole module; modules no longer need a view composer for it
+- The admin API is authenticated with the session (`['web', 'api', 'auth']` middleware and the CSRF token) instead of API tokens
+
+### Added
+
+- `drop_api_token_from_users_table` migration
+- Tags module public URLs (`Tag::url()`, `Tag::isPublished()`)
+
+### Fixed
+
+- `php artisan optimize` (`view:cache`) failed with `DirectoryNotFoundException` once a module had been created with `typicms:create` or moved with `typicms:publish`
+- `typicms:create` generated a routes file without the `ModuleRoutes` import and a model whose `url()` always returned `null`
+- Query strings are kept untouched when a module URI is rewritten
+- Pages linked to a module are read once per request and forgotten when a page is saved, so feeds and `llms.txt` never use a stale URI
+- HTML source editor syntax highlighting (CodeMirror packages deduplicated in `vite.config.js`)
+- The contact form failed to render because of escaped quotes in its labels
+- Downloading the `.ics` file of an event without an address failed with a `TypeError`
+
+### Removed
+
+- `api_token` column on users, the `api-token` meta tag and the token-based `api` guard in `config/auth.php`
+- `admin`, `public`, `mails` and `errors` view namespaces
+- `sort-page_sections` route (unused)
+
 ## 17.0.0 - 2026-05-01
 
 ### Changed
