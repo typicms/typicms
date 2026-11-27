@@ -50,7 +50,6 @@
         "@uppy/locales": "^5.3.2",
         "@uppy/vue": "^4.0.1",
         "@uppy/xhr-upload": "^6.0.1",
-        "alertify.js": "^1.0.12",
         "bootstrap": "^6.0.0-alpha.2",
         "cropperjs": "^2.3.1",
         "js-beautify": "^2.0.3",

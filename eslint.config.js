@@ -48,7 +48,6 @@ export default [
             globals: {
                 ...globals.browser,
                 TypiCMS: 'readonly',
-                alertify: 'readonly',
                 emitter: 'readonly',
                 setItemsHeight: 'readonly',
                 registerMasonry: 'readonly',
@@ -76,7 +75,6 @@ export default [
             globals: {
                 ...globals.browser,
                 TypiCMS: 'readonly',
-                alertify: 'readonly',
                 emitter: 'readonly',
             },
             parser: vueParser,

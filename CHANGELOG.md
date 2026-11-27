@@ -11,6 +11,7 @@ Upgrade guide: the `typicms-v18-upgrade` skill shipped with typicms/core (`resou
 - Bootstrap 6 (admin and public), `typicms/laravel-translatable-bootforms` 11 (Bootstrap 6 markup); `@popperjs/core` is no longer needed
 - Admin and public Sass variables replaced by Bootstrap CSS variables; published SCSS that uses `$` variables from `admin/_variables.scss` must be updated
 - Buttons use Bootstrap classes in the markup instead of `@extend`, item list status uses a Bootstrap switch
+- Admin notifications use Bootstrap toasts instead of alertify.js: `alertify.success()` / `alertify.error()` become `toast.success()` / `toast.error()` (global `window.toast`, or `import toast from './admin/toast.ts'`), and the layouts render them with `<x-core::toasts />`
 - View namespaces removed: views are referenced like app views. Replace `admin::` with `admin.`, `public::` with `public.` and `mails::` with `mail.` in views, controllers, notifications, view composers, `config/javascript.php` and `bootstrap/app.php` (`admin.errors.`). Route names such as `admin::index-news` are unchanged
 - Packages register their views with `View::addLocation()`; the project's `resources/views` still comes first, so published views keep overriding the package ones
 - `typicms.template_dir` is now a folder of `resources/views`, used as `{template_dir}.pages.{template}`
@@ -38,6 +39,7 @@ Upgrade guide: the `typicms-v18-upgrade` skill shipped with typicms/core (`resou
 
 - `api_token` column on users, the `api-token` meta tag and the token-based `api` guard in `config/auth.php`
 - `admin`, `public`, `mails` and `errors` view namespaces
+- alertify.js and `_alertify.scss`
 - `sort-page_sections` route (unused)
 
 ## 17.0.0 - 2026-05-01
