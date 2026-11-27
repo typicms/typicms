@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de6d642e7ee9d94a6201f74e77ce48fc",
+    "content-hash": "552d0c78ef898d5476684c0cbf4494c2",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -9204,21 +9204,22 @@
         },
         {
             "name": "typicms/core",
-            "version": "17.0.61",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "2c219b1643b5801f2787bbc88f9b061483a3ea51"
+                "reference": "ba73c7917c7444d0a37b51537ddd7f4af7b97ae5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/2c219b1643b5801f2787bbc88f9b061483a3ea51",
-                "reference": "2c219b1643b5801f2787bbc88f9b061483a3ea51",
+                "url": "https://api.github.com/repos/typicms/core/zipball/ba73c7917c7444d0a37b51537ddd7f4af7b97ae5",
+                "reference": "ba73c7917c7444d0a37b51537ddd7f4af7b97ae5",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "~13.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -9246,7 +9247,7 @@
             "description": "The core package of TypiCMS, containing the base architecture, services, and shared components used across all modules.",
             "support": {
                 "issues": "https://github.com/typicms/core/issues",
-                "source": "https://github.com/typicms/core/tree/17.0.61"
+                "source": "https://github.com/typicms/core/tree/main"
             },
             "funding": [
                 {
@@ -9254,8 +9255,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-27T13:06:54+00:00",
-            "published-time": "2026-11-27T13:10:19+00:00"
+            "time": "2026-11-27T13:32:49+00:00",
+            "published-time": "2026-11-27T13:32:56+00:00"
         },
         {
             "name": "typicms/form",
@@ -14505,7 +14506,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "maatwebsite/excel": 20
+        "maatwebsite/excel": 20,
+        "typicms/core": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
