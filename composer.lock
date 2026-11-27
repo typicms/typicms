@@ -9204,7 +9204,7 @@
         },
         {
             "name": "typicms/core",
-            "version": "17.0.59",
+            "version": "17.0.60",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
@@ -9246,7 +9246,7 @@
             "description": "The core package of TypiCMS, containing the base architecture, services, and shared components used across all modules.",
             "support": {
                 "issues": "https://github.com/typicms/core/issues",
-                "source": "https://github.com/typicms/core/tree/17.0.59"
+                "source": "https://github.com/typicms/core/tree/17.0.60"
             },
             "funding": [
                 {
@@ -9255,7 +9255,7 @@
                 }
             ],
             "time": "2026-11-27T12:02:15+00:00",
-            "published-time": "2026-11-27T12:06:00+00:00"
+            "published-time": "2026-11-27T12:07:06+00:00"
         },
         {
             "name": "typicms/form",
