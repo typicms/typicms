@@ -43,7 +43,7 @@
         "typicms/core": "^18.0",
         "typicms/laravel-translatable-bootforms": "^11.0",
         "typicms/nestablecollection": "^6.0",
-        "typicms/sidebar": "^2.0",
+        "typicms/sidebar": "^3.0",
         "typicms/translatable": "^2.0",
         "typidesign/laravel-artisan-translations": "^4.0",
         "ultrono/laravel-sitemap": "^10.0.0"

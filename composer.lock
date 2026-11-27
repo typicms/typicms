@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "656f4e527d33356ae31eab079b7eec82",
+    "content-hash": "88766a28b6b9bd40c2c6f4473dd1fa97",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -9488,16 +9488,16 @@
         },
         {
             "name": "typicms/sidebar",
-            "version": "2.0.2",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/sidebar.git",
-                "reference": "8eaf15a9b972e350c124659ab84a554e998017d3"
+                "reference": "ffdf465e0e815b02eb867c8397df5ff27bc19151"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/sidebar/zipball/8eaf15a9b972e350c124659ab84a554e998017d3",
-                "reference": "8eaf15a9b972e350c124659ab84a554e998017d3",
+                "url": "https://api.github.com/repos/typicms/sidebar/zipball/ffdf465e0e815b02eb867c8397df5ff27bc19151",
+                "reference": "ffdf465e0e815b02eb867c8397df5ff27bc19151",
                 "shasum": ""
             },
             "require": {
@@ -9537,10 +9537,10 @@
             "description": "A sidebar builder for TypiCMS",
             "support": {
                 "issues": "https://github.com/typicms/sidebar/issues",
-                "source": "https://github.com/typicms/sidebar/tree/2.0.2"
+                "source": "https://github.com/typicms/sidebar/tree/3.0.0"
             },
-            "time": "2026-11-05T16:30:34+00:00",
-            "published-time": "2026-11-05T16:34:16+00:00"
+            "time": "2026-11-27T17:26:36+00:00",
+            "published-time": "2026-11-27T22:12:33+00:00"
         },
         {
             "name": "typicms/translatable",
