@@ -9212,12 +9212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "9a2aad608c0a4858fa4baee0d99560d0cefc62ce"
+                "reference": "ab2dbd709bebcca47a6dd59f888cd67f857f409f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/9a2aad608c0a4858fa4baee0d99560d0cefc62ce",
-                "reference": "9a2aad608c0a4858fa4baee0d99560d0cefc62ce",
+                "url": "https://api.github.com/repos/typicms/core/zipball/ab2dbd709bebcca47a6dd59f888cd67f857f409f",
+                "reference": "ab2dbd709bebcca47a6dd59f888cd67f857f409f",
                 "shasum": ""
             },
             "require": {
@@ -9262,8 +9262,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-27T17:59:13+00:00",
-            "published-time": "2026-11-27T17:59:21+00:00"
+            "time": "2026-11-27T22:10:27+00:00",
+            "published-time": "2026-11-27T22:10:36+00:00"
         },
         {
             "name": "typicms/form",
