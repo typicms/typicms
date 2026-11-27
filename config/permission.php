@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Spatie\Permission\Models\Permission;
 use TypiCMS\Modules\Core\Models\Role;
 

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Spatie\ResponseCache\Hasher\DefaultHasher;
 use Spatie\ResponseCache\Replacers\CsrfTokenReplacer;
 use Spatie\ResponseCache\Serializers\JsonSerializer;

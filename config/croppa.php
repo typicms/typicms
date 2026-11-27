@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Bkwld\Croppa\Filters\BlackWhite;
 use Bkwld\Croppa\Filters\Blur;
 use Bkwld\Croppa\Filters\Darkgray;
