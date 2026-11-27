@@ -9204,16 +9204,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "17.0.60",
+            "version": "17.0.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "5419be1f1e314cb5ba4dbfacab53e589a3103e77"
+                "reference": "2c219b1643b5801f2787bbc88f9b061483a3ea51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/5419be1f1e314cb5ba4dbfacab53e589a3103e77",
-                "reference": "5419be1f1e314cb5ba4dbfacab53e589a3103e77",
+                "url": "https://api.github.com/repos/typicms/core/zipball/2c219b1643b5801f2787bbc88f9b061483a3ea51",
+                "reference": "2c219b1643b5801f2787bbc88f9b061483a3ea51",
                 "shasum": ""
             },
             "require": {
@@ -9246,7 +9246,7 @@
             "description": "The core package of TypiCMS, containing the base architecture, services, and shared components used across all modules.",
             "support": {
                 "issues": "https://github.com/typicms/core/issues",
-                "source": "https://github.com/typicms/core/tree/17.0.60"
+                "source": "https://github.com/typicms/core/tree/17.0.61"
             },
             "funding": [
                 {
@@ -9254,8 +9254,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-27T12:02:15+00:00",
-            "published-time": "2026-11-27T12:07:06+00:00"
+            "time": "2026-11-27T13:06:54+00:00",
+            "published-time": "2026-11-27T13:10:19+00:00"
         },
         {
             "name": "typicms/form",
