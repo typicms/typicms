@@ -28,6 +28,7 @@ return RectorConfig::configure()
         __DIR__.'/public',
         __DIR__.'/routes',
         __DIR__.'/Modules',
+        ...glob(__DIR__.'/packages/typicms/*/src'),
     ])
     ->withPreparedSets(
         deadCode: true,
