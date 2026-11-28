@@ -31,5 +31,11 @@ export default defineConfig({
     ],
     resolve: {
         dedupe: ['@codemirror/autocomplete', '@codemirror/language', '@codemirror/state', '@codemirror/view', '@lezer/common', '@lezer/highlight'],
+        preserveSymlinks: true, // false = resolve symlinks (this is the default but be explicit)
+    },
+    server: {
+        watch: {
+            followSymlinks: true, // make the HMR watcher follow symlinks
+        },
     },
 });
