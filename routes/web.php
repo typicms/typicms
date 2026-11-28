@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+declare(strict_types=1);
 
 // Route::get('/', function () {
 //     return view('welcome');
