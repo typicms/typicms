@@ -29,3 +29,4 @@ Thumbs.db
 .mcp.json
 boost.json
 phpstan.neon
+/database/*.sqlite*
