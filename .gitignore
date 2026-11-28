@@ -28,3 +28,4 @@ Thumbs.db
 /.claude/skills
 .mcp.json
 boost.json
+phpstan.neon
