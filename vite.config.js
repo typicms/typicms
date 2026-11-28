@@ -31,7 +31,7 @@ export default defineConfig({
     ],
     resolve: {
         dedupe: ['@codemirror/autocomplete', '@codemirror/language', '@codemirror/state', '@codemirror/view', '@lezer/common', '@lezer/highlight'],
-        preserveSymlinks: true, // false = resolve symlinks (this is the default but be explicit)
+        preserveSymlinks: true, // keep symlinked paths instead of resolving them to their real location
     },
     server: {
         watch: {
